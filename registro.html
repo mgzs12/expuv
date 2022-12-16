@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- adaptarse al tamaño de los dispositivos -->
+
+    <title>Registro</title>
+    <link rel="shortcut icon" href="img/fluv.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Imagen de inicio en barra -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap" rel="stylesheet">  <!-- Fuente de letras -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="c1.css">
+    <script src="https://kit.fontawesome.com/31fe9b57c9.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+
+<header>
+        <div class="container">
+               <img align="right"src="img/fluv.png" class="logo">
+             <h1 >REGISTRO</h1>
+            <a href = "registro.html">
+            </a>
+            <nav>
+                 <a href="index1.html">Inicio</a>
+                <a href="index.html">Volver</a>
+                <a href="https://www.google.com.mx/">Salir</a>
+
+            </nav>
+            <a href ="#" class="barrahamb"><i class="fas fa-bars"></i></a>  
+        </div>
+    </header>
+<main>
+       <form id="frmprueba" action="insertar.php" method="post" enctype="multipart/form-data">
+        <div>
+            <br>
+            <br>
+            <br>
+            <label>Estudiante</label>
+            <br>
+            <br>
+            <label >Matricula <input type="text" name="Usuario" placeholder="Ingresa matricula" required></label> </input>
+            <br>
+            <br>
+            <br>
+            <label >Apellido Paterno  <input type="text" name="Apellido Paterno" placeholder="Ingresa apellido materno" required></label> </input>
+            <label >Apellido Materno  <input type="text" name="Apellido Materno" placeholder="Ingresa apellido paterno" required></label> </input>
+            <br>
+            <br>
+            <br>
+            <label >Promedio  <input type="text" name="Promedio" placeholder="Ingresa promedio" required></label> </input>
+        </div>
+        <div>
+            <br>
+            <br>
+            <label>Docente</label>
+             <br>
+             <br>
+            <label >Matricula <input type="text" name="Usuario" placeholder="Ingresa matricula" required></label> </input>
+            <br>
+            <br>
+            <br>
+            <label> Nombre  <input type="text" name="Nombre" placeholder="Ingresa Nombre" required></label> </input>
+            <br>
+            <br>
+            <br>
+            <label> Apellido Paterno  <input type="text" name="Apellido Paterno" placeholder="Ingresa apellido materno" required></label> </input> 
+            <label> Apellido Materno  <input type="text" name="Apellido Materno" placeholder="Ingresa apellido paterno" required></label> </input>
+            <br>
+            <br>
+            <br>
+            <label >Correo  <input id="email_ins" type="email" name="email_ins"  placeholder="Ingrese el correo del docente"  size="60" required></label> </input>
+        </div>  
+          <br>
+            <br>
+            <br>
+                  
+        <input align="center" type="submit" name="Finalizar registro"></input>
+        <input align="center" type="reset" name="Cancelar"></input> 
+      </form>  
+    </main>
+    <footer>
+        <div class="barra-footer">
+            &copy;Derechos Reservados 2022
+        </div>
+    </footer> 
+    <script src="js/funciones.js"></script>
+</body> 
+</html>
